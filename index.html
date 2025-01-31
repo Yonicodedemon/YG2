@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+    <meta charset="utf-8" />
+    <title>YG Jailbreak and Auto Exploit | PS4 9.00</title>
+	<meta content="YG Jailbreak and Auto Exploit Host for firmware 9.00 containing latest payloads for 	, GoldHen, App2USB, Disable Updates, etc. with option to cache and exploit offline" name="description">
+    <link rel="shortcut icon" href="favicon.ico"></link>
+	<link href="assets/style.css" rel="stylesheet">
+	<link rel="icon" href="assets/favicon.ico" sizes="32x32">
+    <style>
+        body {
+            background-color: black;
+            color: yellow		;
+            text-align: center;
+        }
+        .goldhen-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .goldhen-buttons a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: yellow;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+	<script>
+		window.applicationCache.ondownloading = function()
+		{
+			alert("Caching started! Press OK and check progress on the bottom of the page.")
+		};
+		window.applicationCache.onprogress = function(a)
+		{
+			document.getElementById("progresscon").style.display="block";
+			document.getElementById("progressbarpc").innerHTML="<h3>Caching Status: "+(Math.round(100*(a.loaded/a.total)))+"% Completed</h3>";
+			document.getElementById("progressbar").style.width=(Math.round(100*(a.loaded/a.total)))+"%";
+		};
+		window.applicationCache.oncached = window.applicationCache.onupdateready = function()
+		{
+			alert("Page cached successfully. Press OK.")
+			document.getElementById("progresscon").style.display="none";
+		};
+	</script>
+	<div class="logo"></div>
+	<div class="maincon">
+		<div class="goldhen-buttons">
+			<a href="jb.html#p0=payloads/mira-900.js&p1=payloads/goldhen-2.2.5-b7-900.js">GoldHen 2.25b7</a>
+			<a href="jb.html#p0=payloads/mira-900.js&p1=payloads/goldhen-2.2.4-900.js">GoldHen 2.24</a>
+			<a href="jb.html#p0=payloads/mira-900.js&p1=payloads/goldhen-2.4b16.2-900.js">GoldHen 2.4b16.2</a>
+		</div>
+	</div>
+	<div class="ftrinfo">
+		<div class="waviy">
+			<span style="--i:1">&#8650;</span>
+			<span style="--i:2">YG</span>
+			<span style="--i:3">Jailbreak</span>
+			<span style="--i:4">and</span>
+			<span style="--i:5">auto</span>
+			<span style="--i:6">exploit</span>
+			<span style="--i:7">site</span>
+		</div>
+		<div class="waviy">
+			<span style="--i:1">
+				<a href="https://ygjailbreak.com/s/host-exploit-site" target="_blank">Call 0952717239</a>
+			</span>
+
+		</div>
+	</div>
+	<div id="progresscon">
+		<div id="progressbar">
+			<span id="progressbarpc"></span>
+		</div>
+	</div>
+<div class="content" >
+ 
+<br><span class="yellow">Designed and Compiled by :</span>&nbsp;&nbsp; <a class="hue" style='font-size:50px;text-align:center;text-shadow: 6px 6px 6px black;color:black;'>Yonas Goitom(YG)</a>
+  <br><span class="green" >Playstation 4 and 5,Xbox,PC,nintendo switch,psvita,steam deck and more :</span >&nbsp;&nbsp; <a class="hue" style='font-size:25px;text-align:center;text-shadow: 4px 4px 4px black;color:black;'>contact me 0952717239</a>
+ </div>
+</div>
+	
+	<script>
+		function opentab(evt, tabName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(tabName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
