@@ -4,9 +4,15 @@ body {
 }
 .logo {
 	background:url(logo.png) no-repeat;
-	width:500px;
-	height:49px;
-	margin:25px auto;	
+	width:700px;
+	height:420px;
+	margin:1px auto;
+}
+
+.logo img {
+    width: 100%; /* Adjusts to container */
+    height: auto;
+}	
 }
 .maincon {
 	width:70%;
